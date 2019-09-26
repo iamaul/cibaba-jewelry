@@ -5,8 +5,8 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                {{-- <h3 class="v">Cibaba Jewelry</h3>
-                <h3 class="vr">Since - 1945</h3> --}}
+                <h3 class="v">Cibaba Jewelry</h3>
+                <h3 class="vr">Since 1998</h3>
                 <div class="col-md-11 ftco-animate text-left">
                     <h2>Find more jewelry creations here.</h2>
                     <h2><span>Wear Your Diamond</span></h2>
@@ -33,144 +33,36 @@
             </div>
     		<div class="row">
     			<div class="col-md-12">
-    				<div class="product-slider owl-carousel ftco-animate">
-    					<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt="">
-		    						<span class="status">30%</span>
-		    					</a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-			    							<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-			    						</div>
-			    						<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-				    						<p class="price"><span>$120.00</span></p>
-				    					</div>
-				    					<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-			    					</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-				    						<p class="price"><span>$120.00</span></p>
-				    					</div>
-				    					<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-			    					</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-				    						<p class="price"><span>$120.00</span></p>
-				    					</div>
-				    					<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-			    					</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img src="{{ asset('images/product-2.jpg') }}" alt="">
-			    					<span class="status">30%</span>
-			    				</a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-			    							<p class="price"><span class="mr-2 price-dc">$120.00</span><span class="price-sale">$80.00</span></p>
-			    						</div>
-			    						<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-		    						</div>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				<div class="item">
-		    				<div class="product">
-		    					<a href="#" class="img-prod"><img src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-		    					<div class="text pt-3 px-3">
-		    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-		    						<div class="d-flex">
-		    							<div class="pricing">
-				    						<p class="price"><span>$120.00</span></p>
-				    					</div>
-				    					<div class="rating">
-			    							<p class="text-right">
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    								<span class="ion-ios-star-outline"></span>
-			    							</p>
-			    						</div>
-			    					</div>
-		    					</div>
-		    				</div>
-	    				</div>
-    				</div>
+                    <div class="product-slider owl-carousel ftco-animate">
+                        @forelse ($trendings as $trend)
+                            <div class="item">
+                                <div class="product">
+                                    <a href="#" class="img-prod">
+                                        <img class="img-fluid" src="storage/{{ $trend->image }}" alt="">
+                                    </a>
+                                    <div class="text pt-3 px-3">
+                                        <h3><a href="#">{{ $trend->name }}</a></h3>
+                                        <div class="d-flex">
+                                            <div class="pricing">
+                                                <p class="price"><span>{{ presetPrice($trend->price) }}</span></p>
+                                            </div>
+                                            {{-- <div class="rating">
+                                                <p class="text-right">
+                                                    <span class="ion-ios-star-outline"></span>
+                                                    <span class="ion-ios-star-outline"></span>
+                                                    <span class="ion-ios-star-outline"></span>
+                                                    <span class="ion-ios-star-outline"></span>
+                                                    <span class="ion-ios-star-outline"></span>
+                                                </p>
+                                            </div> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @empty
+                            <h1 class="heading">TRENDINGS NOT AVAILABLE</h1>
+                        @endforelse
+                    </div>
     			</div>
     		</div>
     	</div>
@@ -209,123 +101,48 @@
     	</div>
     	<div class="container-fluid">
     		<div class="row">
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-    					<div class="text py-3 px-3">
-    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-    						<div class="d-flex">
-    							<div class="pricing">
-		    						<p class="price"><span>$120.00</span></p>
-		    					</div>
-		    					<div class="rating">
-	    							<p class="text-right">
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    							</p>
-	    						</div>
-	    					</div>
-	    					<hr>
-    						<p class="bottom-area d-flex">
-    							<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-    							<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-    					<div class="text py-3 px-3">
-    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-    						<div class="d-flex">
-    							<div class="pricing">
-		    						<p class="price"><span>$120.00</span></p>
-		    					</div>
-		    					<div class="rating">
-	    							<p class="text-right">
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    							</p>
-	    						</div>
-	    					</div>
-	    					<hr>
-    						<p class="bottom-area d-flex">
-    							<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-    							<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-    					<div class="text py-3 px-3">
-    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-    						<div class="d-flex">
-    							<div class="pricing">
-		    						<p class="price"><span>$120.00</span></p>
-		    					</div>
-		    					<div class="rating">
-	    							<p class="text-right">
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    							</p>
-	    						</div>
-	    					</div>
-	    					<hr>
-    						<p class="bottom-area d-flex">
-    							<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-    							<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-    						</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-sm col-md-6 col-lg ftco-animate">
-    				<div class="product">
-    					<a href="#" class="img-prod"><img class="img-fluid" src="{{ asset('images/product-2.jpg') }}" alt=""></a>
-    					<div class="text py-3 px-3">
-    						<h3><a href="#">Young Woman Wearing Dress</a></h3>
-    						<div class="d-flex">
-    							<div class="pricing">
-		    						<p class="price"><span>$120.00</span></p>
-		    					</div>
-		    					<div class="rating">
-	    							<p class="text-right">
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    								<span class="ion-ios-star-outline"></span>
-	    							</p>
-	    						</div>
-	    					</div>
-	    					<hr>
-    						<p class="bottom-area d-flex">
-    							<a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
-    							<a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
-    						</p>
-    					</div>
-    				</div>
+    			<div class="product-slider owl-carousel col-sm col-md-6 col-lg ftco-animate">
+                    @forelse ($products as $product)
+                        <div class="product">
+                            <a href="#" class="img-prod">
+                                <img class="img-fluid" src="/storage/{{ $product->image }}" alt="">
+                            </a>
+                            <div class="text py-3 px-3">
+                                <h3><a href="#">{{ $product->name }}</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price"><span>{{ presetPrice($product->price) }}</span></p>
+                                    </div>
+                                    {{-- <div class="rating">
+                                        <p class="text-right">
+                                            <span class="ion-ios-star-outline"></span>
+                                            <span class="ion-ios-star-outline"></span>
+                                            <span class="ion-ios-star-outline"></span>
+                                            <span class="ion-ios-star-outline"></span>
+                                            <span class="ion-ios-star-outline"></span>
+                                        </p>
+                                    </div> --}}
+                                </div>
+                                {{-- <hr>
+                                <p class="bottom-area d-flex">
+                                    <a href="#" class="add-to-cart"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                    <a href="#" class="ml-auto"><span><i class="ion-ios-heart-empty"></i></span></a>
+                                </p> --}}
+                            </div>
+                        </div>
+                    @empty
+                        <h1 class="heading">PRODUCTS NOT AVAILABLE</h1>
+                    @endforelse
     			</div>
     		</div>
     	</div>
     </section>
 
-    <section class="ftco-section ftco-section-more img" style="background-image: url({{ asset('images/bg_5.jpg') }})">
+    <section class="ftco-section ftco-section-more img" style="background-image: url({{ asset('images/bg.jpg') }})">
     	<div class="container">
     		<div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
-          	        <h2>Summer Sale</h2>
+          	        <h2 class="text-right">PROMO NOW!</h2>
                 </div>
             </div>
     	</div>
@@ -343,76 +160,25 @@
                     <div class="row ftco-animate">
                         <div class="col-md-12">
                             <div class="carousel-testimony owl-carousel ftco-owl">
-                                <div class="item">
-                                    <div class="testimony-wrap py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url({{ asset('images/person_1.jpg') }})">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Customer</span>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-wrap py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url({{ asset('images/person_2.jpg') }})">
-                                        <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                        </span>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Customer</span>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-wrap py-4 pb-5">
-                                        <div class="user-img mb-4" style="background-image: url({{ asset('images/person_3.jpg') }})">
-                                            <span class="quote d-flex align-items-center justify-content-center">
-                                                <i class="icon-quote-left"></i>
-                                            </span>
-                                        </div>
-                                        <div class="text text-center">
-                                            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Customer</span>
+                                @forelse ($testimonies as $testimony)
+                                    <div class="item">
+                                        <div class="testimony-wrap py-4 pb-5">
+                                            <img class="user-img mb-4" src="/storage/{{ $testimony->image }}">
+                                            {{-- <div class="user-img mb-4" style="background-image: url({{ asset('/storage/{{ $testimony->image }}') }})"> --}}
+                                                <span class="quote d-flex align-items-center justify-content-center">
+                                                    <i class="icon-quote-left"></i>
+                                                </span>
+                                            </div>
+                                            <div class="text text-center">
+                                                <p class="mb-4">{{ $testimony->text }}</p>
+                                                <p class="name">{{ $testimony->name }}</p>
+                                                <span class="position">{{ $testimony->role }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-wrap py-4 pb-5">
-                                        <div class="user-img mb-4" style="background-image: url({{ asset('images/person_1.jpg') }})">
-                                            <span class="quote d-flex align-items-center justify-content-center">
-                                                <i class="icon-quote-left"></i>
-                                            </span>
-                                        </div>
-                                        <div class="text text-center">
-                                            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Customer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-wrap py-4 pb-5">
-                                        <div class="user-img mb-4" style="background-image: url({{ asset('images/person_1.jpg') }})">
-                                            <span class="quote d-flex align-items-center justify-content-center">
-                                                <i class="icon-quote-left"></i>
-                                            </span>
-                                        </div>
-                                        <div class="text text-center">
-                                            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                            <p class="name">Roger Scott</p>
-                                            <span class="position">Customer</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                @empty
+                                    <h1 class="heading text-center">NO DATA AVAILABLE</h1>
+                                @endforelse
                             </div>
                         </div>
                     </div>
@@ -421,7 +187,7 @@
         </div>
     </section>
 
-    <section class="ftco-section">
+    {{-- <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -470,7 +236,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({{ asset('images/bg_4.jpg') }})">
     	<div class="container">
@@ -515,7 +281,7 @@
     	</div>
     </section> --}}
 
-    <section class="ftco-section bg-light ftco-services">
+    <section class="ftco-section ftco-services">
     	<div class="container">
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -541,7 +307,7 @@
                             <span class="flaticon-001-box"></span>
                         </div>
                         <div class="media-body">
-                            <h3 class="heading">Premium Packaging</h3>
+                            <h3 class="heading">Product Warranty</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
                     </div>    

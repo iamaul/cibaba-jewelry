@@ -15,9 +15,9 @@
                 <div class="ftco-footer-widget mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Menu</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">Catalog</a></li>
-                        <li><a href="#" class="py-2 d-block">Blog</a></li>
-                        <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                        <li><a href="/catalog" class="py-2 d-block">Catalog</a></li>
+                        <li><a href="/promo" class="py-2 d-block">Promo</a></li>
+                        <li><a href="/contact" class="py-2 d-block">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
