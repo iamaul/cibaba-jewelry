@@ -104,7 +104,7 @@
     			<div class="product-slider owl-carousel col-sm col-md-6 col-lg ftco-animate">
                     @forelse ($products as $product)
                         <div class="product">
-                            <a href="#" class="img-prod">
+                            <a href="{{ route('product-detail', $product->slug) }}" class="img-prod">
                                 <img class="img-fluid" src="/storage/{{ $product->image }}" alt="">
                             </a>
                             <div class="text py-3 px-3">

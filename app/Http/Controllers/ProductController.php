@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -41,12 +41,16 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Product  $product
+     * @param  {slug} $slug
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($slug)
     {
-        //
+        $data = array(
+            'title' => $slug,
+            'product' => Product::where('slug', $slug)->firstOrFail()
+        );
+        return view('pages.product.detail')->with($data);
     }
 
     /**

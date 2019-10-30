@@ -9092,3 +9092,18 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+div.card-slider {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  background-color: #b1c4d9;
+  color: white;
+  width: 100%;
+  height: 60px;
+  border-radius: 3%;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
+  padding-top: 1%;
+}
