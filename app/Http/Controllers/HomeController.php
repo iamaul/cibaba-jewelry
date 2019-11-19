@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Testimony;
 use App\Models\Product;
-use App\Models\Trending;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,9 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = array(
-            'trendings' => Trending::orderBy('created_at', 'desc')->get(),
-            'products' => Product::orderBy('created_at', 'desc')->get(),
-            'testimonies' => Testimony::orderBy('created_at', 'desc')->get()
+            'products' => Product::orderBy('created_at', 'desc')->get()
         );
         return view('index')->with($data);
     }

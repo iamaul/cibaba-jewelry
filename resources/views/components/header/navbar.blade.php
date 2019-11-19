@@ -20,7 +20,7 @@
                 <li class="nav-item {{ isNavActive(['/catalog']) }}"><a href="/catalog" class="nav-link">Catalog</a></li>
                 <li class="nav-item {{ isNavActive(['/promo']) }}"><a href="/promo" class="nav-link">Promo</a></li>
                 {{-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> --}}
-                <li class="nav-item {{ isNavActive(['/contact']) }}"><a href="/contact" class="nav-link">Contact</a></li>
+                {{-- <li class="nav-item {{ isNavActive(['/contact']) }}"><a href="/contact" class="nav-link">Contact</a></li> --}}
                 {{-- <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li> --}}
 	        </ul>
         </div>

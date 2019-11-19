@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddNewColumnOfPriceOnTrendingsTable extends Migration
+class AddNewColumnOfTrendingOnProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class AddNewColumnOfPriceOnTrendingsTable extends Migration
      */
     public function up()
     {
-        if (!Schema::hasColumn('trendings', 'price')) {
-            Schema::table('trendings', function($table) {
-                $table->integer('price')->after('name');
+        if (!Schema::hasColumn('products', 'trending')) {
+            Schema::table('products', function($table) {
+                $table->integer('trending')->after('image');
             });
         }
     }

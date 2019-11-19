@@ -34,34 +34,34 @@
     		<div class="row">
     			<div class="col-md-12">
                     <div class="product-slider owl-carousel ftco-animate">
-                        @forelse ($trendings as $trend)
-                            <div class="item">
-                                <div class="product">
-                                    <a href="#" class="img-prod">
-                                        <img class="img-fluid" src="storage/{{ $trend->image }}" alt="">
-                                    </a>
-                                    <div class="text pt-3 px-3">
-                                        <h3><a href="#">{{ $trend->name }}</a></h3>
-                                        <div class="d-flex">
-                                            <div class="pricing">
-                                                <p class="price"><span>{{ presetPrice($trend->price) }}</span></p>
+                        @foreach ($products as $product)
+                            @if ($product->trending)
+                                <div class="item">
+                                    <div class="product">
+                                        <a href="{{ route('product-detail', $product->slug) }}" class="img-prod">
+                                            <img class="img-fluid" src="storage/{{ $product->image }}" alt="">
+                                        </a>
+                                        <div class="text pt-3 px-3">
+                                            <h3><a href="#">{{ $product->name }}</a></h3>
+                                            <div class="d-flex">
+                                                <div class="pricing">
+                                                    <p class="price"><span>{{ presetPrice($product->price) }}</span></p>
+                                                </div>
+                                                {{-- <div class="rating">
+                                                    <p class="text-right">
+                                                        <span class="ion-ios-star-outline"></span>
+                                                        <span class="ion-ios-star-outline"></span>
+                                                        <span class="ion-ios-star-outline"></span>
+                                                        <span class="ion-ios-star-outline"></span>
+                                                        <span class="ion-ios-star-outline"></span>
+                                                    </p>
+                                                </div> --}}
                                             </div>
-                                            {{-- <div class="rating">
-                                                <p class="text-right">
-                                                    <span class="ion-ios-star-outline"></span>
-                                                    <span class="ion-ios-star-outline"></span>
-                                                    <span class="ion-ios-star-outline"></span>
-                                                    <span class="ion-ios-star-outline"></span>
-                                                    <span class="ion-ios-star-outline"></span>
-                                                </p>
-                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @empty
-                            <h1 class="heading">TRENDINGS NOT AVAILABLE</h1>
-                        @endforelse
+                            @endif
+                        @endforeach
                     </div>
     			</div>
     		</div>
@@ -97,7 +97,7 @@
                     <h1 class="big">Products</h1>
                     <h2 class="mb-4">Our Products</h2>
                 </div>
-            </div>    		
+            </div>
     	</div>
     	<div class="container-fluid">
     		<div class="row">
@@ -138,7 +138,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-section-more img" style="background-image: url({{ asset('images/bg.jpg') }})">
+    {{-- <section class="ftco-section ftco-section-more img" style="background-image: url({{ asset('images/bg.jpg') }})">
     	<div class="container">
     		<div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
@@ -146,46 +146,7 @@
                 </div>
             </div>
     	</div>
-    </section>
-
-    <section class="ftco-section testimony-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center mb-3 pb-3">
-                <div class="col-md-12 heading-section text-center ftco-animate">
-          	        <h1 class="big">Testimony</h1>
-                </div>
-            </div>    		
-            <div class="row justify-content-center">
-                <div class="col-md-8 ftco-animate">
-                    <div class="row ftco-animate">
-                        <div class="col-md-12">
-                            <div class="carousel-testimony owl-carousel ftco-owl">
-                                @forelse ($testimonies as $testimony)
-                                    <div class="item">
-                                        <div class="testimony-wrap py-4 pb-5">
-                                            <img class="user-img mb-4" src="/storage/{{ $testimony->image }}">
-                                            {{-- <div class="user-img mb-4" style="background-image: url({{ asset('/storage/{{ $testimony->image }}') }})"> --}}
-                                                <span class="quote d-flex align-items-center justify-content-center">
-                                                    <i class="icon-quote-left"></i>
-                                                </span>
-                                            </div>
-                                            <div class="text text-center">
-                                                <p class="mb-4">{{ $testimony->text }}</p>
-                                                <p class="name">{{ $testimony->name }}</p>
-                                                <span class="position">{{ $testimony->role }}</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @empty
-                                    <h1 class="heading text-center">NO DATA AVAILABLE</h1>
-                                @endforelse
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> --}}
 
     {{-- <section class="ftco-section">
         <div class="container">
@@ -281,7 +242,7 @@
     	</div>
     </section> --}}
 
-    <section class="ftco-section ftco-services">
+    <section class="ftco-section ftco-services bg-light">
     	<div class="container">
             <div class="row justify-content-center mb-3 pb-3">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -299,7 +260,7 @@
                             <h3 class="heading">Refund Policy</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
                 <div class="col-md-4 text-center d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services">
@@ -310,7 +271,7 @@
                             <h3 class="heading">Product Warranty</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-md-4 text-center d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services">
@@ -321,12 +282,12 @@
                             <h3 class="heading">Superior Quality</h3>
                             <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
                         </div>
-                    </div>      
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-		
+
     {{-- <section class="ftco-section-parallax">
         <div class="parallax-img d-flex align-items-center">
             <div class="container">

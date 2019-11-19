@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-section">
+<footer class="ftco-section ftco-footer">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md">
@@ -17,7 +17,6 @@
                     <ul class="list-unstyled">
                         <li><a href="/catalog" class="py-2 d-block">Catalog</a></li>
                         <li><a href="/promo" class="py-2 d-block">Promo</a></li>
-                        <li><a href="/contact" class="py-2 d-block">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,34 +57,34 @@
         </div>
     </div>
 </footer>
-      
+
 <!-- loader -->
-<div 
-    id="ftco-loader" 
+<div
+    id="ftco-loader"
     class="show fullscreen"
 >
-    <svg 
-        class="circular" 
-        width="48px" 
+    <svg
+        class="circular"
+        width="48px"
         height="48px"
     >
-        <circle 
-            class="path-bg" 
-            cx="24" 
-            cy="24" 
-            r="22" 
-            fill="none" 
-            stroke-width="4" 
+        <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
             stroke="#eeeeee"
         />
-        <circle 
-            class="path" 
-            cx="24" 
-            cy="24" 
-            r="22" 
-            fill="none" 
-            stroke-width="4" 
-            stroke-miterlimit="10" 
+        <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
             stroke="#F96D00"
         />
     </svg>
