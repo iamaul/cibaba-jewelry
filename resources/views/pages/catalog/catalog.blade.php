@@ -24,38 +24,26 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            @foreach ($products as $product)
-                                <img
-                                    src="/storage/{{ $product->image }}"
-                                >
-                                <div class="catalog-desc">
-                                    <h3>{{ $product->name }}</h3>
-                                    <p>{{ presetPrice($product->price) }}</p>
+                <div class="product-slider owl-carousel col-sm col-md-6 col-lg ftco-animate">
+                    @forelse ($products as $product)
+                        <div class="product">
+                            <a href="{{ route('product-detail', $product->slug) }}" class="img-prod">
+                                <img class="img-fluid" src="/storage/{{ $product->image }}" alt="">
+                            </a>
+                            <div class="text py-3 px-3">
+                                <h3><a href="#">{{ $product->name }}</a></h3>
+                                <div class="d-flex">
+                                    <div class="pricing">
+                                        <p class="price"><span>{{ presetPrice($product->price) }}</span></p>
+                                    </div>
                                 </div>
-                            @endforeach
+                            </div>
                         </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    @empty
+                        <h1 class="heading">PRODUCTS NOT AVAILABLE</h1>
+                    @endforelse
                 </div>
             </div>
         </div>
     </section>
-@endsection
-
-@section('extra-js')
-<script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
 @endsection
