@@ -43,7 +43,7 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Jl. Scientia Boulevard, Gading, Serpong, Tangerang, Banten 15227</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">021-8809090</span></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=6282260228827&text=Haloha%20Ada%20Yang%20Bisa%20Kami%20Bantu"><span class="icon icon-whatsapp"></span><span class="text">0822 6022 8827</span></a></li>
                             <li><a href="#"><span class="icon icon-envelope"></span><span class="text">cs@cibaba.com</span></a></li>
                         </ul>
                     </div>

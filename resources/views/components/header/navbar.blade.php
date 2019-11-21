@@ -8,16 +8,25 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	            <li class="nav-item {{ isNavActive(['/']) }}"><a href="/" class="nav-link">Home</a></li>
-	            {{-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+	            <li class="nav-item {{ isNavActive(['/catalog']) }} dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdown04"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Catalog
+                    </a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="shop.html">Shop</a>
-                        <a class="dropdown-item" href="product-single.html">Single Product</a>
-                        <a class="dropdown-item" href="cart.html">Cart</a>
-                        <a class="dropdown-item" href="checkout.html">Checkout</a>
+                        <a class="dropdown-item" href="#">See All</a>
+                    @foreach ($categories as $category)
+                        <a class="dropdown-item" href="{{ route('catalog', $category->slug) }}">{{ $category->name }}</a>
+                    @endforeach
                     </div>
-                </li> --}}
-                <li class="nav-item {{ isNavActive(['/catalog']) }}"><a href="/catalog" class="nav-link">Catalog</a></li>
+                </li>
+                {{-- <li class="nav-item {{ isNavActive(['/catalog']) }}"><a href="/catalog" class="nav-link">Catalog</a></li> --}}
                 <li class="nav-item {{ isNavActive(['/promo']) }}"><a href="/promo" class="nav-link">Promo</a></li>
                 {{-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> --}}
                 {{-- <li class="nav-item {{ isNavActive(['/contact']) }}"><a href="/contact" class="nav-link">Contact</a></li> --}}

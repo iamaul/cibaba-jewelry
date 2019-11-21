@@ -7319,7 +7319,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-brand {
     color: #D4AF37; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
-      color: #fff; }
+      color: gold; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #D4AF37; } }
@@ -7336,7 +7336,7 @@ h1, h2, h3, h4, h5,
     color: #D4AF37;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #fff; }
+      color: gold; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -7345,7 +7345,7 @@ h1, h2, h3, h4, h5,
         padding-bottom: .9rem;
         color: #D4AF37; }
         .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-          color: #fff; } }
+          color: gold; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #D4AF37;
@@ -7356,7 +7356,7 @@ h1, h2, h3, h4, h5,
       font-size: 14px; }
       .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover, .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
         background: transparent;
-        color: #000000; }
+        color: #fff; }
   .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
     position: relative;
     margin-left: 20px;
@@ -7384,7 +7384,7 @@ h1, h2, h3, h4, h5,
         padding-right: 15px; } }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-        color: #fff;
+        color: gold;
         background: #D4AF37; } }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: gold; }
@@ -7413,12 +7413,12 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-item.active > a {
       color: gold !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
-      color: #fff !important;
+      color: gold !important;
       background: #D4AF37;
       border: none !important; }
       .ftco-navbar-light.scrolled .nav-item.cta > a span {
         display: inline-block;
-        color: #fff !important; }
+        color: gold !important; }
     .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
       border-color: #D4AF37; }
     @media (max-width: 991.98px) {
@@ -7477,7 +7477,6 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: .6;
     width: 50%;
-
     /* background: #ffffff;  */
   }
 
@@ -9108,4 +9107,43 @@ div.card-slider {
   /* margin-top: auto; */
   /* margin-bottom: auto; */
   padding-top: 1%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 12px;
+    background: #f8f9fa !important;
+    /* center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #915b4a !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #915b4a !important;
+}
+
+.catalog-desc {
+    position: relative;
+    width: 100px;
+    /* width: 100%;
+    height: 100%; */
 }

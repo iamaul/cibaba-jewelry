@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('content')
-    <div class="hero-wrap hero-bread" style="background-image: url('images/bg_6.jpg');">
+@section('header')
+    <div class="hero-wrap hero-bread">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -9,17 +9,19 @@
                     <p class="breadcrumbs">
                         <span class="mr-2">
                             <a href="/">Home</a>
-                        </span> 
+                        </span>
                         <span class="mr-2">
                             <a href="/catalog">Catalog</a>
-                        </span> 
+                        </span>
                         <span>Product Detail</span>
                     </p>
                 </div>
             </div>
         </div>
     </div>
+@endsection
 
+@section('content')
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row">

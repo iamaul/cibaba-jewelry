@@ -6,7 +6,7 @@ use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class CatalogController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data = array(
-            'products' => Product::orderBy('created_at', 'desc')->get(),
+        $maxpage = 10;
+
+        $products = Product::whereHas('categories', function ($query) {
+            $query->where('slug', request()->category);
+        });
+        $products = $products->orderBy('created_at', 'desc')->paginate($maxpage);
+
+        return view('pages.catalog.catalog')->with([
+            'products' => $products,
             'categories' => Category::orderBy('name', 'asc')->get()
-        );
-        return view('index')->with($data);
+        ]);
     }
 
     /**

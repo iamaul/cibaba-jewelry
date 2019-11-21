@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/product/detail/{product}', 'ProductController@show')->name('product-detail');
+Route::get('/catalog/category/{category}', 'CatalogController@index')->name('catalog');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

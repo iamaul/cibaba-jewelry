@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -48,7 +49,8 @@ class ProductController extends Controller
     {
         $data = array(
             'title' => $slug,
-            'product' => Product::where('slug', $slug)->firstOrFail()
+            'product' => Product::where('slug', $slug)->firstOrFail(),
+            'categories' => Category::orderBy('name', 'asc')->get()
         );
         return view('pages.product.detail')->with($data);
     }

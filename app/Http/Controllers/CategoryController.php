@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
-use App\Models\Category;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +13,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data = array(
-            'products' => Product::orderBy('created_at', 'desc')->get(),
-            'categories' => Category::orderBy('name', 'asc')->get()
-        );
-        return view('index')->with($data);
+        //
     }
 
     /**
