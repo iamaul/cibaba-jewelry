@@ -30,7 +30,14 @@
                             <a href="{{ route('product-detail', $product->slug) }}" class="img-prod">
                                 <img class="img-fluid" src="/storage/{{ $product->image }}" alt="">
                             </a>
-                            <div class="text py-3 px-3">
+                            <div
+                                class="text py-3 px-3 h-100"
+                                style="
+                                    border-radius: 10px;
+                                    width: 100%;
+                                    height: auto;
+                                "
+                            >
                                 <h3><a href="#">{{ $product->name }}</a></h3>
                                 <div class="d-flex">
                                     <div class="pricing">

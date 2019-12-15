@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\Product;
 
-class CategoryController extends Controller
+class PromoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.promo.index')->with([
+            'products' => Product::orderBy('created_at', 'desc')->get(),
+            'categories' => Category::orderBy('name', 'asc')->get()
+        ]);
     }
 
     /**

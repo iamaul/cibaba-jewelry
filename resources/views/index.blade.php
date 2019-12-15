@@ -47,15 +47,6 @@
                                                 <div class="pricing">
                                                     <p class="price"><span>{{ presetPrice($product->price) }}</span></p>
                                                 </div>
-                                                {{-- <div class="rating">
-                                                    <p class="text-right">
-                                                        <span class="ion-ios-star-outline"></span>
-                                                        <span class="ion-ios-star-outline"></span>
-                                                        <span class="ion-ios-star-outline"></span>
-                                                        <span class="ion-ios-star-outline"></span>
-                                                        <span class="ion-ios-star-outline"></span>
-                                                    </p>
-                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>

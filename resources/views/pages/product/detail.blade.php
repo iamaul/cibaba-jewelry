@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-    <div class="hero-wrap hero-bread">
+    <div class="hero-wrap hero-bread bg-light">
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
@@ -22,7 +22,7 @@
 @endsection
 
 @section('content')
-    <section class="ftco-section bg-light">
+    <section class="ftco-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-5 ftco-animate">
@@ -36,7 +36,7 @@
                         <span>{{ presetPrice($product->price) }}</span>
                     </p>
                     <p class="text-justify">{!! $product->description !!}</p>
-                    <div class="row mt-4">
+                    {{-- <div class="row mt-4">
                         <div class="col-md-6">
                             <div class="form-group d-flex">
                                 <div class="select-wrap">
@@ -51,7 +51,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         {{-- <div class="w-100"></div>
                             <div class="input-group col-md-6 d-flex mb-3">
                                 <span class="input-group-btn mr-2">

@@ -20,7 +20,7 @@
                         Catalog
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                        <a class="dropdown-item" href="#">See All</a>
+                        {{-- <a class="dropdown-item" href="#">See All</a> --}}
                     @foreach ($categories as $category)
                         <a class="dropdown-item" href="{{ route('catalog', $category->slug) }}">{{ $category->name }}</a>
                     @endforeach
