@@ -25,4 +25,9 @@ class Product extends Model
     {
         return $this->belongsTo('App\Models\Category', 'category_id');
     }
+
+    public function presetPrice()
+    {
+        return 'Rp. '.number_format($this->price, 2);
+    }
 }

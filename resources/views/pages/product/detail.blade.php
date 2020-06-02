@@ -36,41 +36,70 @@
                         <span>{{ presetPrice($product->price) }}</span>
                     </p>
                     <p class="text-justify">{!! $product->description !!}</p>
-                    {{-- <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="form-group d-flex">
-                                <div class="select-wrap">
-                                    <div class="icon">
-                                        <span class="ion-ios-arrow-down"></span>
-                                    </div>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Small</option>
-                                        <option value="">Medium</option>
-                                        <option value="">Large</option>
-                                        <option value="">Extra Large</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div> --}}
-                        {{-- <div class="w-100"></div>
-                            <div class="input-group col-md-6 d-flex mb-3">
-                                <span class="input-group-btn mr-2">
-                                    <button type="button" class="quantity-left-minus btn"  data-type="minus" data-field="">
-                                        <i class="ion-ios-remove"></i>
-                                    </button>
-                                </span>
-                                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-                                <span class="input-group-btn ml-2">
-                                    <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-                                        <i class="ion-ios-add"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                        <p><a href="cart.html" class="btn btn-primary py-3 px-5">Add to Cart</a></p> --}}
+                    <div class="row mt-4">
+                        <p>
+                            <a 
+                                href="#" 
+                                class="add-to-cart btn btn-primary py-3 px-5"
+                                data-id="{{ $product->id }}"
+                                data-name="{{ $product->name }}"
+                                data-price="{{ $product->price }}"
+                            >
+                                Add to Cart
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+@endsection
+
+@section('extra-js')
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8.17.1/dist/sweetalert2.all.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+            $(".add-to-cart").on('click', function(e) {
+                e.stopPropagation();
+                e.stopImmediatePropagation();
+
+                const id = $(this).attr('data-id');
+                const name = $(this).attr('data-name');
+                const price = $(this).attr('data-price');
+
+                $.ajax({
+                    url: `/shopping/add/cart/${id}/${name}/${price}`,
+                    type: 'POST',
+                    data: {
+                        '_token': CSRF_TOKEN,
+                        id: id,
+                        name: name,
+                        price: price
+                    },
+                    dataType: 'JSON',
+                    success: function(response) {
+                        Swal.fire({
+                            title: 'Success',
+                            html: `Added <b>${response.item}</b> to your cart`,
+                            type: 'success',
+                            showCancelButton: true,
+                            confirmButtonColor: '#b1c4d9',
+                            cancelButtonColor: '#b1c4d9',
+                            confirmButtonText: 'Go to My Cart',
+                            cancelButtonText: 'Continue Shopping'
+                        }).then((result) => {
+                            if (result.value) {
+                                window.location.href = '{{ route('cart') }}';
+                            }
+                        });
+                    },
+                    error: function(xhr, status, error) {
+                        var errorMessage = xhr.status + ': ' + xhr.statusText
+                        console.log(`An unexpected error has occurred: ${errorMessage}`);
+                    }
+                });
+            });
+        });
+	</script>
 @endsection

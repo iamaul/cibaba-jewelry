@@ -41,7 +41,6 @@
     @include('components.header.navbar')
     @yield('header')
     @yield('content')
-    @yield('extra-js')
     @include('components.footer.footer')
 
     {{-- JavaScript --}}
@@ -59,6 +58,9 @@
     <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('js/scrollax.min.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    @yield('extra-js')
+    @notify_js
+    @notify_render
 
   </body>
 </html>

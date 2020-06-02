@@ -30,7 +30,11 @@
                 <li class="nav-item {{ isNavActive(['/promo']) }}"><a href="/promo" class="nav-link">Promo</a></li>
                 {{-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> --}}
                 {{-- <li class="nav-item {{ isNavActive(['/contact']) }}"><a href="/contact" class="nav-link">Contact</a></li> --}}
-                {{-- <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li> --}}
+                <li class="nav-item cta cta-colored">
+                    <a href="{{ route('cart') }}" class="nav-link {{ isNavActive(['shopping/cart']) }} font-weight-bold">
+                        <span class="icon-shopping_cart"></span>{{ Cart::instance('default')->count() }}
+                    </a>
+                </li>
 	        </ul>
         </div>
     </div>
